@@ -46,6 +46,8 @@ add_action( 'wp_enqueue_scripts', 'svg_social_menu_scripts_styles' );
 
 /**
  * Adds inline styles to the header
+ *
+ * You can filter the styles via the svg_social_menu_inline_style filter
  */
 
 function svg_social_menu_inline_style() {
