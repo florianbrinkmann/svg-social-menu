@@ -27,7 +27,7 @@ GNU General Public License for more details.
  */
 function svg_social_menu_register_theme_location() {
 	if ( ! array_key_exists( 'svg-social-menu', get_registered_nav_menus() ) ) {
-		register_nav_menu( 'svg-social-menu', __( 'Social Profile Links', 'svg-social-menu' ) );
+		register_nav_menu( 'svg-social-menu', __( 'SVG Social Menu', 'svg-social-menu' ) );
 	}
 }
 
@@ -63,3 +63,9 @@ function svg_social_menu_register_widget() {
 }
 
 add_action( 'widgets_init', 'svg_social_menu_register_widget' );
+
+function svg_social_menu_inline_style_change( $styles ) {
+	$styles = '';
+}
+
+add_filter( 'svg_social_menu_inline_style', 'svg_social_menu_inline_style_change' );

@@ -8,7 +8,7 @@ class Svg_Social_Menu_Widget extends WP_Widget {
 	public function __construct() {
 		$widget_ops = array(
 			'classname'   => 'widget-svg-social-menu',
-			'description' => __( 'Widget to display social network profile link as SVGs', 'svg-social-menu' )
+			'description' => __( 'Widget to display social network profile link as SVGs (uses the menu from position “SVG Social Menu”)', 'svg-social-menu' )
 		);
 		parent::__construct( 'svg_social_menu_widget', __( 'SVG Social Menu', 'svg-social-menu' ), $widget_ops );
 	}
