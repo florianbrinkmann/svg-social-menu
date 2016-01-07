@@ -21,12 +21,11 @@ To use it, follow these steps after activation:
 
 You can filter the custom CSS with the following code in your theme, where `$styles` is the CSS:
 
-```php
-function svg_social_menu_inline_style_change( $styles ) {
+`function slug_edit_svg_social_menu_styles( $styles ) {
     $styles = '';
 }
 
-add_filter( 'svg_social_menu_inline_style', 'svg_social_menu_inline_style_change' );```
+add_filter( 'svg_social_menu_inline_style', 'slug_edit_svg_social_menu_styles' );`
 
 The following social network URLs are supported:
 
