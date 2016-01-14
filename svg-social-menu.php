@@ -4,7 +4,7 @@ defined( 'ABSPATH' ) or die( "Nothing to see!" );
 Plugin Name: SVG Social Menu
 Plugin URI:
 Description: This describes my plugin in a short sentence
-Version:     1.0
+Version:     1.0.4
 Author:      Florian Brinkmann
 Author URI:  https://florianbrinkmann.de
 License:     GPL2
@@ -21,6 +21,15 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 */
+
+/**
+ * Load the language files
+ */
+function svg_social_menu_load_translation() {
+	load_plugin_textdomain( 'svg-social-menu' );
+}
+
+add_action( 'plugins_loaded', 'svg_social_menu_load_translation' );
 
 /**
  * Register Theme Location
