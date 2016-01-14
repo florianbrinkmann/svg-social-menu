@@ -65,9 +65,3 @@ function svg_social_menu_register_widget() {
 }
 
 add_action( 'widgets_init', 'svg_social_menu_register_widget' );
-
-function svg_social_menu_inline_style_change( $styles ) {
-	$styles = '';
-}
-
-add_filter( 'svg_social_menu_inline_style', 'svg_social_menu_inline_style_change' );
