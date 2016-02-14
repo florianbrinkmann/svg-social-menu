@@ -197,7 +197,7 @@ class Svg_Social_Menu_Walker extends Walker_Nav_Menu {
 			$icon_url    = plugins_url( "svg/social-media-icons.svg#$svg_id", __DIR__ );
 			$item_output = $args->before;
 			$item_output .= '<a' . $attributes . '>';
-			$item_output .= '<svg class="' . $svg_id . '"><use xlink:href="' . $icon_url . '"></use><span class="screen-reader-text">' . $svg_screen_reader_text . '</svg>';
+			$item_output .= '<svg class="' . $svg_id . '"><use xlink:href="' . $icon_url . '"></use></svg><span class="screen-reader-text">' . $svg_screen_reader_text . '</span>';
 			$item_output .= '</a>';
 			$item_output .= $args->after;
 		} else {

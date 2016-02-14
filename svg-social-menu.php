@@ -4,7 +4,7 @@ defined( 'ABSPATH' ) or die( "Nothing to see!" );
 Plugin Name: SVG Social Menu
 Plugin URI:
 Description: This describes my plugin in a short sentence
-Version:     1.0.5
+Version:     1.0.6
 Author:      Florian Brinkmann
 Author URI:  https://florianbrinkmann.de
 License:     GPL2
