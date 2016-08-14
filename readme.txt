@@ -2,8 +2,8 @@
 Contributors: FlorianBrinkmann
 Tags: widget, social, menu, svg, vector, custom nav menu
 Requires at least: 3.4.0
-Tested up to: 4.4.2
-Stable tag: 1.0.6
+Tested up to: 4.6
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,6 +46,7 @@ The following social network URLs are supported:
 * xing.de
 * xing.com
 * /feed
+* mailto:
 
 If you want more or have other problems, you can create an issue on [GitHub](https://github.com/FlorianBrinkmann/svg-social-menu).
 
@@ -58,6 +59,10 @@ If you want more or have other problems, you can create an issue on [GitHub](htt
 5. Drag the widget “SVG Social Menu” in one of your widget areas
 
 == Changelog ==
+
+= 1.1 =
+* tested with 4.6
+* added email icon for mailto: links
 
 = 1.0.6 =
 * moved span after the svg element (before it was inside accidently) and added missing closing tag

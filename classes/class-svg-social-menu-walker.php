@@ -112,71 +112,75 @@ class Svg_Social_Menu_Walker extends Walker_Nav_Menu {
 		$social_media_channels = array(
 			'plus.google.com' => array(
 				'id'                 => 'icon-google-plus',
-				'screen-reader-text' => __( 'Google Plus', 'hannover' )
+				'screen-reader-text' => __( 'Google Plus', 'svg-social-menu' )
 			),
 			'wordpress.org'   => array(
 				'id'                 => 'icon-wordpress',
-				'screen-reader-text' => __( 'WordPress.org', 'hannover' )
+				'screen-reader-text' => __( 'WordPress.org', 'svg-social-menu' )
 			),
 			'wordpress.com'   => array(
 				'id'                 => 'icon-wordpress',
-				'screen-reader-text' => __( 'WordPress.com', 'hannover' )
+				'screen-reader-text' => __( 'WordPress.com', 'svg-social-menu' )
 			),
 			'facebook.com'    => array(
 				'id'                 => 'icon-facebook',
-				'screen-reader-text' => __( 'Facebook', 'hannover' )
+				'screen-reader-text' => __( 'Facebook', 'svg-social-menu' )
 			),
 			'twitter.com'     => array(
 				'id'                 => 'icon-twitter',
-				'screen-reader-text' => __( 'Twitter', 'hannover' )
+				'screen-reader-text' => __( 'Twitter', 'svg-social-menu' )
 			),
 			'dribbble.com'    => array(
 				'id'                 => 'icon-dribbble',
-				'screen-reader-text' => __( 'Dribbble', 'hannover' )
+				'screen-reader-text' => __( 'Dribbble', 'svg-social-menu' )
 			),
 			'pinterest.com'   => array(
 				'id'                 => 'icon-pinterest',
-				'screen-reader-text' => __( 'Pinterest', 'hannover' )
+				'screen-reader-text' => __( 'Pinterest', 'svg-social-menu' )
 			),
 			'github.com'      => array(
 				'id'                 => 'icon-github',
-				'screen-reader-text' => __( 'GitHub', 'hannover' )
+				'screen-reader-text' => __( 'GitHub', 'svg-social-menu' )
 			),
 			'tumblr.com'      => array(
 				'id'                 => 'icon-tumblr',
-				'screen-reader-text' => __( 'Tumblr', 'hannover' )
+				'screen-reader-text' => __( 'Tumblr', 'svg-social-menu' )
 			),
 			'youtube.com'     => array(
 				'id'                 => 'icon-youtube',
-				'screen-reader-text' => __( 'YouTube', 'hannover' )
+				'screen-reader-text' => __( 'YouTube', 'svg-social-menu' )
 			),
 			'flickr.com'      => array(
 				'id'                 => 'icon-flickr',
-				'screen-reader-text' => __( 'Flickr', 'hannover' )
+				'screen-reader-text' => __( 'Flickr', 'svg-social-menu' )
 			),
 			'vimeo.com'       => array(
 				'id'                 => 'icon-vimeo',
-				'screen-reader-text' => __( 'Vimeo', 'hannover' )
+				'screen-reader-text' => __( 'Vimeo', 'svg-social-menu' )
 			),
 			'instagram.com'   => array(
 				'id'                 => 'icon-instagram',
-				'screen-reader-text' => __( 'Instagram', 'hannover' )
+				'screen-reader-text' => __( 'Instagram', 'svg-social-menu' )
 			),
 			'linkedin.com'    => array(
 				'id'                 => 'icon-linkedin',
-				'screen-reader-text' => __( 'LinkedIn', 'hannover' )
+				'screen-reader-text' => __( 'LinkedIn', 'svg-social-menu' )
 			),
 			'xing.de'         => array(
 				'id'                 => 'icon-xing',
-				'screen-reader-text' => __( 'Xing', 'hannover' )
+				'screen-reader-text' => __( 'Xing', 'svg-social-menu' )
 			),
 			'xing.com'        => array(
 				'id'                 => 'icon-xing',
-				'screen-reader-text' => __( 'Xing', 'hannover' )
+				'screen-reader-text' => __( 'Xing', 'svg-social-menu' )
 			),
 			'/feed'           => array(
 				'id'                 => 'icon-feed',
-				'screen-reader-text' => __( 'Feed', 'hannover' )
+				'screen-reader-text' => __( 'Feed', 'svg-social-menu' )
+			),
+			'mailto:'         => array(
+				'id'                 => 'icon-mail',
+				'screen-reader-text' => __( 'Email', 'svg-social-menu' )
 			),
 		);
 

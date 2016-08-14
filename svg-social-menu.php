@@ -3,8 +3,8 @@ defined( 'ABSPATH' ) or die( "Nothing to see!" );
 /*
 Plugin Name: SVG Social Menu
 Plugin URI:
-Description: This describes my plugin in a short sentence
-Version:     1.0.6
+Description: Display your social media profile links with vector icons using a custom navigation menu.
+Version:     1.1
 Author:      Florian Brinkmann
 Author URI:  https://florianbrinkmann.de
 License:     GPL2
@@ -60,8 +60,8 @@ add_action( 'wp_enqueue_scripts', 'svg_social_menu_scripts_styles' );
  */
 
 function svg_social_menu_inline_style() {
-	$styles = '<style>.widget-svg-social-menu .screen-reader-text {clip: rect(1px, 1px, 1px, 1px);height: 1px;overflow: hidden;position: absolute !important;e !important;word-wrap: normal !important;
-	}.widget-svg-social-menu ul {padding-left: 0;}.widget-svg-social-menu ul li {float: left;list-style-type: none;margin: 0.7em;line-height: 0;font-size: .9em;}.widget-svg-social-menu ul svg {fill: #444; height: 2em; width: 2em;}.widget-svg-social-menu ul a:hover svg,.widget-svg-social-menu ul a:focus svg,.widget-svg-social-menu ul a:active svg {fill: #999;}</style>';
+	$styles = '<style>.widget-svg-social-menu .screen-reader-text {clip: rect(1px, 1px, 1px, 1px);height: 1px;overflow: hidden;position: absolute !important;word-wrap: normal !important;
+	}.widget-svg-social-menu ul {padding-left: 0;}.widget-svg-social-menu ul li {float: left;list-style-type: none;margin: 0.7em;line-height: 0;font-size: .9em;}.widget-svg-social-menu ul li::before {display: none;}.widget-svg-social-menu ul svg {fill: #444; height: 2em; width: 2em;}.widget-svg-social-menu ul a:hover svg,.widget-svg-social-menu ul a:focus svg,.widget-svg-social-menu ul a:active svg {fill: #999;}</style>';
 	echo apply_filters( 'svg_social_menu_inline_style', $styles );
 }
 

@@ -1,4 +1,7 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="icon-mail" viewBox="0 0 16 16">
+        <path d="M2,4v1l6,3l6-3V4H2z M2,6.5V12h12V6.5l-6,3L2,6.5z"/>
+    </symbol>
     <symbol id="icon-twitter" viewBox="0 0 16 16">
         <title>Twitter</title>
         <path d="M15,3.627c-0.515,0.229-1.068,0.383-1.649,0.452c0.592-0.355,1.048-0.918,1.262-1.589
