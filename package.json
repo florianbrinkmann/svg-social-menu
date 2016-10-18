@@ -1,0 +1,24 @@
+{
+  "name": "svg-social-menu",
+  "capitalname": "SVG Social Menu",
+  "description": "This plugin adds a Widget that allows you to show show the social media links as vector icons.",
+  "author": "Florian Brinkmann",
+  "homepage": "https://florianbrinkmann.de/",
+  "version": "1.1.1",
+  "copyright": "2016",
+  "license": "GPLv2 or later",
+  "contributors": [
+    {
+      "name": "Florian Brinkmann",
+      "url": "https://florianbrinkmann.de/"
+    },
+    {
+      "name": "Stefan Brechbühl",
+      "url": "https://www.pixelstrol.ch"
+    }
+  ],
+  "devDependencies": {
+    "grunt":          "*",
+    "grunt-svgstore": "*"
+  }
+}
