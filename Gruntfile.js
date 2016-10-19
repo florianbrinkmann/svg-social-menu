@@ -4,6 +4,22 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 	pkg: grunt.file.readJSON('package.json'),
 
+	svgmin: {
+		dist: {
+			files: [{
+			expand: true,
+			cwd: 'src/',
+			src: ['*.svg'],
+			dest: 'src/'
+			}]
+		},
+		options: {
+			plugins: [
+				{ removeViewBox: false },
+				{ removeUselessStrokeAndFill: false }
+			]
+		}
+	},
 
 	svgstore: {
 		options: {
@@ -18,16 +34,18 @@ module.exports = function(grunt) {
 		},
 		default : {
 			files: {
-				'svg/social-media-icons.svg': ['svg/single/*.svg'],
+				'svg/social-media-icons.svg': ['src/*.svg'],
 			},
 		},
 	}
+
 	});
 
-	// Load the plugin that provides the "svgstore" task.
+	// Load plugins
+	grunt.loadNpmTasks('grunt-svgmin');
 	grunt.loadNpmTasks('grunt-svgstore');
 
 	// Default task(s).
-	grunt.registerTask('default', ['svgstore']);
+	grunt.registerTask('default', ['svgmin', 'svgstore']);
 
 };
