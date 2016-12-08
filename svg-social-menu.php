@@ -4,7 +4,7 @@ defined( 'ABSPATH' ) or die( "Nothing to see!" );
 Plugin Name: SVG Social Menu
 Plugin URI: https://florianbrinkmann.de/2000/ein-social-icons-menue-mit-svgs-in-wordpress-umsetzen/
 Description: Display your social media profile links with vector icons using a custom navigation menu.
-Version:     1.1.1
+Version:     1.2
 Author:      Florian Brinkmann
 Author URI:  https://florianbrinkmann.de
 License:     GPL2
