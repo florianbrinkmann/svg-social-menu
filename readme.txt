@@ -2,8 +2,8 @@
 Contributors: FlorianBrinkmann
 Tags: widget, social, menu, svg, vector, custom nav menu
 Requires at least: 3.4.0
-Tested up to: 4.7
-Stable tag: 1.2
+Tested up to: 4.7.3
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,7 +22,19 @@ To use it, follow these steps after activation:
 You can filter the custom CSS with the following code in your theme, where `$styles` is the CSS:
 
 `function slug_edit_svg_social_menu_styles( $styles ) {
-    $styles = '';
+    $styles = '<style>yourStyles</style>';
+
+    return $styles;
+}
+
+add_filter( 'svg_social_menu_inline_style', 'slug_edit_svg_social_menu_styles' );`
+
+If you want to add CSS to the default rules, try this:
+
+`function slug_edit_svg_social_menu_styles( $styles ) {
+    $styles .= '<style>additionalStyles</style>';
+
+    return $styles;
 }
 
 add_filter( 'svg_social_menu_inline_style', 'slug_edit_svg_social_menu_styles' );`
@@ -59,6 +71,10 @@ If you want more or have other problems, you can create an issue on [GitHub](htt
 5. Drag the widget “SVG Social Menu” in one of your widget areas
 
 == Changelog ==
+
+= 1.2.1 =
+* tested with 4.7.3
+* fixed filter doc in readme
 
 = 1.2 =
 * tested with 4.7
