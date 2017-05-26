@@ -4,9 +4,9 @@ defined( 'ABSPATH' ) or die( "Nothing to see!" );
 Plugin Name: SVG Social Menu
 Plugin URI: https://florianbrinkmann.de/2000/ein-social-icons-menue-mit-svgs-in-wordpress-umsetzen/
 Description: Display your social media profile links with vector icons using a custom navigation menu.
-Version:     1.2.1
+Version:     1.2.2
 Author:      Florian Brinkmann
-Author URI:  https://florianbrinkmann.de
+Author URI:  https://florianbrinkmann.com/en/
 License:     GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: svg-social-menu
@@ -61,7 +61,7 @@ add_action( 'wp_enqueue_scripts', 'svg_social_menu_scripts_styles' );
 
 function svg_social_menu_inline_style() {
 	$styles = '<style>.widget-svg-social-menu .screen-reader-text {clip: rect(1px, 1px, 1px, 1px);height: 1px;overflow: hidden;position: absolute !important;word-wrap: normal !important;
-	}.widget-svg-social-menu ul {padding-left: 0;}.widget-svg-social-menu ul li {display: inline-block; list-style-type: none;margin: 0 0.5em 0.5em 0;line-height: 0;font-size: .9em;}.widget-svg-social-menu ul li::before {display: none;}.widget-svg-social-menu ul svg {fill: #444; height: 2em; width: 2em;}.widget-svg-social-menu ul a {background: none; border: none;}.widget-svg-social-menu ul a:hover,.widget-svg-social-menu ul a:focus,.widget-svg-social-menu ul a:active {border:none}.widget-svg-social-menu ul a:hover svg,.widget-svg-social-menu ul a:focus svg,.widget-svg-social-menu ul a:active svg {fill: #999;}</style>';
+	}.widget-svg-social-menu ul {padding-left: 0;}.widget-svg-social-menu ul li {display: inline-block; list-style-type: none;margin: 0 0.5em 0.5em 0;line-height: 0;font-size: .9em;}.widget-svg-social-menu ul li::before {display: none;}.widget-svg-social-menu ul svg {fill: currentColor; height: 2em; width: 2em;}.widget-svg-social-menu ul a {background: none; border: none;}.widget-svg-social-menu ul a:hover,.widget-svg-social-menu ul a:focus,.widget-svg-social-menu ul a:active {background:none;border:none;box-shadow:none;color:currentColor;}.widget-svg-social-menu ul a:hover svg,.widget-svg-social-menu ul a:focus svg,.widget-svg-social-menu ul a:active svg {opacity: .7;}</style>';
 	echo apply_filters( 'svg_social_menu_inline_style', $styles );
 }
 
