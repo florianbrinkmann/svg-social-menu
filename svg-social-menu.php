@@ -4,7 +4,7 @@ defined( 'ABSPATH' ) or die( "Nothing to see!" );
 Plugin Name: SVG Social Menu
 Plugin URI: https://florianbrinkmann.de/2000/ein-social-icons-menue-mit-svgs-in-wordpress-umsetzen/
 Description: Display your social media profile links with vector icons using a custom navigation menu.
-Version:     1.2.2
+Version:     1.2.3
 Author:      Florian Brinkmann
 Author URI:  https://florianbrinkmann.com/en/
 License:     GPL2
@@ -47,7 +47,8 @@ add_action( 'after_setup_theme', 'svg_social_menu_register_theme_location' );
  */
 function svg_social_menu_scripts_styles() {
 	if ( has_nav_menu( 'svg-social-menu' ) ) {
-		wp_enqueue_script( 'svg-social-menu-svg4everybody', plugins_url( 'js/svg4everybody.js', __FILE__ ), array( 'jquery' ), false, true );
+		wp_enqueue_script( 'svg-social-menu-svg4everybody', plugins_url( 'js/svg4everybody.js', __FILE__ ),
+			array( 'jquery' ), false, true );
 	}
 }
 
@@ -60,8 +61,8 @@ add_action( 'wp_enqueue_scripts', 'svg_social_menu_scripts_styles' );
  */
 
 function svg_social_menu_inline_style() {
-	$styles = '<style>.widget-svg-social-menu .screen-reader-text {clip: rect(1px, 1px, 1px, 1px);height: 1px;overflow: hidden;position: absolute !important;word-wrap: normal !important;
-	}.widget-svg-social-menu ul {padding-left: 0;}.widget-svg-social-menu ul li {display: inline-block; list-style-type: none;margin: 0 0.5em 0.5em 0;line-height: 0;font-size: .9em;}.widget-svg-social-menu ul li::before {display: none;}.widget-svg-social-menu ul svg {fill: currentColor; height: 2em; width: 2em;}.widget-svg-social-menu ul a {background: none; border: none;}.widget-svg-social-menu ul a:hover,.widget-svg-social-menu ul a:focus,.widget-svg-social-menu ul a:active {background:none;border:none;box-shadow:none;color:currentColor;}.widget-svg-social-menu ul a:hover svg,.widget-svg-social-menu ul a:focus svg,.widget-svg-social-menu ul a:active svg {opacity: .7;}</style>';
+	$styles = '<style>.svg-social-menu .screen-reader-text {clip: rect(1px, 1px, 1px, 1px);height: 1px;overflow: hidden;position: absolute !important;word-wrap: normal !important;
+	}.svg-social-menu {padding-left: 0;}.svg-social-menu li {display: inline-block; list-style-type: none;margin: 0 0.5em 0.5em 0;line-height: 0;font-size: .9em;}.svg-social-menu li::before {display: none;}.svg-social-menu svg {fill: currentColor; height: 2em; width: 2em;}.svg-social-menu a, .svg-social-menu li {background: none; border: none; box-shadow: none;}.svg-social-menu a:hover,.svg-social-menu a:focus,.svg-social-menu a:active {background:none;border:none;box-shadow:none;color:currentColor;}.svg-social-menu a:hover svg,.svg-social-menu a:focus svg,.svg-social-menu a:active svg {opacity: .7;}</style>';
 	echo apply_filters( 'svg_social_menu_inline_style', $styles );
 }
 

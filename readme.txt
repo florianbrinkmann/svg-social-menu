@@ -2,8 +2,8 @@
 Contributors: FlorianBrinkmann
 Tags: widget, social, menu, svg, vector, custom nav menu
 Requires at least: 3.4.0
-Tested up to: 4.8
-Stable tag: 1.2.2
+Tested up to: 4.9
+Stable tag: 1.2.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -71,6 +71,13 @@ If you want more or have other problems, you can create an issue on [GitHub](htt
 5. Drag the widget “SVG Social Menu” in one of your widget areas
 
 == Changelog ==
+
+= 1.2.3 — 08.11.2017 =
+
+**Changed**
+
+* Updated »Tested up to« version to 4.9.
+* Modified inline styles to make them also work if the theme does not use the feature to add identifying classes to the widget wrapper.
 
 = 1.2.2 — 26.05.2017 =
 * tested with 4.8

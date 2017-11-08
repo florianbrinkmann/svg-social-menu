@@ -10,3 +10,4 @@ Thumbs.db
 # Node Modules
 node_modules
 grunt
+.idea
