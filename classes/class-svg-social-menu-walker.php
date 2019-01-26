@@ -182,6 +182,34 @@ class Svg_Social_Menu_Walker extends Walker_Nav_Menu {
 				'id'                 => 'svg_social_menu_icon-mail',
 				'screen-reader-text' => __( 'Email', 'svg-social-menu' )
 			),
+			'behance.net'         => array(
+				'id'                 => 'svg_social_menu_icon-behance',
+				'screen-reader-text' => __( 'Behance', 'svg-social-menu' )
+			),
+			'amazon.com'         => array(
+				'id'                 => 'svg_social_menu_icon-amazon',
+				'screen-reader-text' => __( 'Amazon', 'svg-social-menu' )
+			),
+			'amazon.de'         => array(
+				'id'                 => 'svg_social_menu_icon-amazon',
+				'screen-reader-text' => __( 'Amazon', 'svg-social-menu' )
+			),
+			'amazon.co.uk'         => array(
+				'id'                 => 'svg_social_menu_icon-amazon',
+				'screen-reader-text' => __( 'Amazon', 'svg-social-menu' )
+			),
+			'amazon.es'         => array(
+				'id'                 => 'svg_social_menu_icon-mail',
+				'screen-reader-text' => __( 'Amazon', 'svg-social-menu' )
+			),
+			'telegram.me'         => array(
+				'id'                 => 'svg_social_menu_icon-telegram',
+				'screen-reader-text' => __( 'Telegram', 'svg-social-menu' )
+			),
+			't.me'         => array(
+				'id'                 => 'svg_social_menu_icon-telegram',
+				'screen-reader-text' => __( 'Telegram', 'svg-social-menu' )
+			),
 		);
 
 		$svg_id = "";

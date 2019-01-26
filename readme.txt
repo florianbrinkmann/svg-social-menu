@@ -2,8 +2,8 @@
 Contributors: FlorianBrinkmann
 Tags: widget, social, menu, svg, vector, custom nav menu
 Requires at least: 3.4.0
-Tested up to: 4.9
-Stable tag: 1.2.3
+Tested up to: 5.0.3
+Stable tag: 1.3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -59,6 +59,13 @@ The following social network URLs are supported:
 * xing.com
 * /feed
 * mailto:
+* amazon.de
+* amazon.com
+* amazon.co.uk
+* amazon.es
+* telegram.me
+* t.me
+* behance.net
 
 If you want more or have other problems, you can create an issue on [GitHub](https://github.com/FlorianBrinkmann/svg-social-menu).
 
@@ -71,6 +78,16 @@ If you want more or have other problems, you can create an issue on [GitHub](htt
 5. Drag the widget “SVG Social Menu” in one of your widget areas
 
 == Changelog ==
+
+= 1.3.0 – 26.01.2019 =
+
+**Added**
+
+* Support for Amazon, Telegram, Behance, and Codepen.
+
+**Changed**
+
+* Updated the existing icons to the latest versions.
 
 = 1.2.3 — 08.11.2017 =
 

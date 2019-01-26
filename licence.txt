@@ -1,8 +1,8 @@
 == Copyright ==
 
-Genericons icon font, Copyright 2013-2015 Automattic.com
+Social Logos, Copyright Automattic.com
 License: GNU GPL, Version 2 (or later)
-Source: http://www.genericons.com
+Source: https://github.com/Automattic/social-logos
 
 Xing Icon from Font Awesome 4.5
 Licence: SIL OFL 1.1
