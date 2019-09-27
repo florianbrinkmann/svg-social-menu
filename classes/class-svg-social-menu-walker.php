@@ -112,103 +112,78 @@ class Svg_Social_Menu_Walker extends Walker_Nav_Menu {
 		$social_media_channels = array(
 			'plus.google.com' => array(
 				'id'                 => 'svg_social_menu_icon-google-plus',
-				'screen-reader-text' => __( 'Google Plus', 'svg-social-menu' )
 			),
 			'wordpress.org'   => array(
 				'id'                 => 'svg_social_menu_icon-wordpress',
-				'screen-reader-text' => __( 'WordPress.org', 'svg-social-menu' )
 			),
 			'wordpress.com'   => array(
 				'id'                 => 'svg_social_menu_icon-wordpress',
-				'screen-reader-text' => __( 'WordPress.com', 'svg-social-menu' )
 			),
 			'facebook.com'    => array(
 				'id'                 => 'svg_social_menu_icon-facebook',
-				'screen-reader-text' => __( 'Facebook', 'svg-social-menu' )
 			),
 			'twitter.com'     => array(
 				'id'                 => 'svg_social_menu_icon-twitter',
-				'screen-reader-text' => __( 'Twitter', 'svg-social-menu' )
 			),
 			'dribbble.com'    => array(
 				'id'                 => 'svg_social_menu_icon-dribbble',
-				'screen-reader-text' => __( 'Dribbble', 'svg-social-menu' )
 			),
 			'pinterest.com'   => array(
 				'id'                 => 'svg_social_menu_icon-pinterest',
-				'screen-reader-text' => __( 'Pinterest', 'svg-social-menu' )
 			),
 			'github.com'      => array(
 				'id'                 => 'svg_social_menu_icon-github',
-				'screen-reader-text' => __( 'GitHub', 'svg-social-menu' )
 			),
 			'tumblr.com'      => array(
 				'id'                 => 'svg_social_menu_icon-tumblr',
-				'screen-reader-text' => __( 'Tumblr', 'svg-social-menu' )
 			),
 			'youtube.com'     => array(
 				'id'                 => 'svg_social_menu_icon-youtube',
-				'screen-reader-text' => __( 'YouTube', 'svg-social-menu' )
 			),
 			'flickr.com'      => array(
 				'id'                 => 'svg_social_menu_icon-flickr',
-				'screen-reader-text' => __( 'Flickr', 'svg-social-menu' )
 			),
 			'vimeo.com'       => array(
 				'id'                 => 'svg_social_menu_icon-vimeo',
-				'screen-reader-text' => __( 'Vimeo', 'svg-social-menu' )
 			),
 			'instagram.com'   => array(
 				'id'                 => 'svg_social_menu_icon-instagram',
-				'screen-reader-text' => __( 'Instagram', 'svg-social-menu' )
 			),
 			'linkedin.com'    => array(
 				'id'                 => 'svg_social_menu_icon-linkedin',
-				'screen-reader-text' => __( 'LinkedIn', 'svg-social-menu' )
 			),
 			'xing.de'         => array(
 				'id'                 => 'svg_social_menu_icon-xing',
-				'screen-reader-text' => __( 'Xing', 'svg-social-menu' )
 			),
 			'xing.com'        => array(
 				'id'                 => 'svg_social_menu_icon-xing',
-				'screen-reader-text' => __( 'Xing', 'svg-social-menu' )
 			),
 			'/feed'           => array(
 				'id'                 => 'svg_social_menu_icon-feed',
-				'screen-reader-text' => __( 'Feed', 'svg-social-menu' )
 			),
 			'mailto:'         => array(
 				'id'                 => 'svg_social_menu_icon-mail',
-				'screen-reader-text' => __( 'Email', 'svg-social-menu' )
 			),
 			'behance.net'         => array(
 				'id'                 => 'svg_social_menu_icon-behance',
-				'screen-reader-text' => __( 'Behance', 'svg-social-menu' )
 			),
 			'amazon.com'         => array(
 				'id'                 => 'svg_social_menu_icon-amazon',
-				'screen-reader-text' => __( 'Amazon', 'svg-social-menu' )
 			),
 			'amazon.de'         => array(
 				'id'                 => 'svg_social_menu_icon-amazon',
-				'screen-reader-text' => __( 'Amazon', 'svg-social-menu' )
 			),
 			'amazon.co.uk'         => array(
 				'id'                 => 'svg_social_menu_icon-amazon',
-				'screen-reader-text' => __( 'Amazon', 'svg-social-menu' )
 			),
 			'amazon.es'         => array(
 				'id'                 => 'svg_social_menu_icon-mail',
-				'screen-reader-text' => __( 'Amazon', 'svg-social-menu' )
 			),
 			'telegram.me'         => array(
 				'id'                 => 'svg_social_menu_icon-telegram',
-				'screen-reader-text' => __( 'Telegram', 'svg-social-menu' )
 			),
 			't.me'         => array(
 				'id'                 => 'svg_social_menu_icon-telegram',
-				'screen-reader-text' => __( 'Telegram', 'svg-social-menu' )
 			),
 		);
 
@@ -220,7 +195,6 @@ class Svg_Social_Menu_Walker extends Walker_Nav_Menu {
 			if ( ! empty( $matches[0] ) ) {
 				$match                  = $matches[0];
 				$svg_id                 = $social_media_channels[ $match ]['id'];
-				$svg_screen_reader_text = $social_media_channels[ $match ]['screen-reader-text'];
 				break;
 			}
 		}
@@ -229,7 +203,7 @@ class Svg_Social_Menu_Walker extends Walker_Nav_Menu {
 			$icon_url    = plugins_url( "svg/social-media-icons.svg#$svg_id", __DIR__ );
 			$item_output = $args->before;
 			$item_output .= '<a' . $attributes . '>';
-			$item_output .= '<svg class="' . $svg_id . '"><use xlink:href="' . $icon_url . '"></use></svg><span class="screen-reader-text">' . $svg_screen_reader_text . '</span>';
+			$item_output .= '<svg class="' . $svg_id . '"><use xlink:href="' . $icon_url . '"></use></svg><span class="screen-reader-text">' . $title . '</span>';
 			$item_output .= '</a>';
 			$item_output .= $args->after;
 		} else {
