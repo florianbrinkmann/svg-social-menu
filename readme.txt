@@ -2,8 +2,8 @@
 Contributors: FlorianBrinkmann
 Tags: widget, social, menu, svg, vector, custom nav menu
 Requires at least: 3.4.0
-Tested up to: 5.0.3
-Stable tag: 1.3.0
+Tested up to: 5.2.3
+Stable tag: 2.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -78,6 +78,12 @@ If you want more or have other problems, you can create an issue on [GitHub](htt
 5. Drag the widget “SVG Social Menu” in one of your widget areas
 
 == Changelog ==
+
+= 2.0.0 – 27.09.2019 =
+
+**Changed**
+
+* Use the menu item link text as screen reader text, instead of the channel name. This is a breaking change for those who left the link texts of the menu items empty, because in that case the social links now do not have a screen reader text anymore. To fix that, add link texts to the items via the menu editor.
 
 = 1.3.0 – 26.01.2019 =
 
