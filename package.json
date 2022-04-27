@@ -18,7 +18,7 @@
     }
   ],
   "devDependencies": {
-    "grunt": "^1.0.4",
+    "grunt": "^1.5.2",
     "grunt-svgmin": "*",
     "grunt-svgstore": "*"
   }
